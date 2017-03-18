@@ -28,6 +28,10 @@ public class RestLetInput extends RouteBuilder {
                 .id("restLet Camel Route")
                 .log(LoggingLevel.DEBUG, "Input")
                 .process(process)
-                .to("direct:recipientListExample");
+                .to("seda:recipientListSeda");
+
+        from(restlet+"?restletMethod=POST")
+                .id("Input using POST method")
+                .to("log:local");
     }
 }

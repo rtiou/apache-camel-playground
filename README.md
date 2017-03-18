@@ -8,3 +8,4 @@ Basic project to help understand how to use Apache Camel Framework
 * [Apache Camel](http://camel.apache.org/)
 
 To create this project was used [Spring Initializr](http://start.spring.io/)
+````
